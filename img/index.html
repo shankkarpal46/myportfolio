@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shankkar's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+    </style> 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/04c19591e6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./img/logo-transparent-svg.svg" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <!-- ---<p>Full Stack Web Developer</p> -->
+                
+                <span id="element"></span>
+
+                <h1>Hi, this is <span>Shankkar Pal</span> <br> here from Mumbai!...</h1>
+
+            </div>
+        </div>   
+    </div>
+
+<!----------------------------------About----------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./img/Bio_picture.jpg" alt="full_pic_portfolio">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="inria-sans-bold">
+                        Recent graduate with a strong foundation in full stack development. Proficient in HTML, CSS, JavaScript, and eager to
+                        apply my skills in building dynamic web applications. Possessing a problem-solving mindset and a passion for learning new technologies. Seeking a challenging role to contribute to a fast-paced development team. 
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick ="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick ="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick ="opentab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Database Development</span><br>Designing and Developing Database in MySQL</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Python Development</span><br>Using Django</li>                          
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-Current</span><br>UI-UX Design Training at ET Institute</li>
+                            <li><span>2019-2021</span><br>Team lead at Startup LLC.</li>
+                            <li><span>2017-2019</span><br>UI-UX Design Executive at Colin Digital Ltd.</li>
+                            <li><span>2016-2017</span><br>Intership at ekart Ecommerce</li>                          
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br><b>BSc in Computer Science</b> from R D National College</li>
+                            <li><span>2018</span><br><b>12</b><sup>th</sup> from Alpha Junior College.</li>
+                            <li><span>2016</span><br><b>10</b><sup>th</sup> from Bombay Cambridge School.</li>                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ---------------------------------------------------Services---------------------------------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Design</h2>
+                    <p>Here I can design and develop you a database by using <b>MySQL.</b> I can fire <b>Triggers and created Stored Procedures</b> as per your requirement.</p>
+                    <a href="https://www.ibm.com/docs/en/db2/11.5?topic=databases-designing">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Designing</h2>
+                    <p>Currently I can create a responsive website by using <b>HTML,CSS and JavaScript.</b> Also if requried I can integrate <b>BootStrap for better UI.</b></p>
+                    <a href="https://www.geeksforgeeks.org/what-is-web-design/">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Backend Developement</h2>
+                    <p>The backend development is done ny me using <b>Python</b> language and it's framework that is <b>Django.</b> Also I can create <b>WebApps.</b></p>
+                    <a href="https://www.python.org/about/apps/">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------------------------------------------------------------Portfolio------------------------------------------------------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="data:image/png;base64,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" alt="sql">
+                    <div class="layer">
+                        <h3>SQL</h3>
+                        <p>
+                            It helps me build database for the website and makes me understand how to manage data.
+                        </p>
+
+                        <a href="https://www.w3schools.com/sql/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="https://www.mediaheroes.com.au/wp-content/uploads/2023/09/purpose-of-a-website-media-heroes-banner-1.webp" alt="">
+
+                    <div class="layer">
+                        <h3>Web Development</h3>
+                        <p>
+                            It helps me build webpage for the website and makes me understand how to build front-end of website.
+                        </p>
+
+                        <a href="https://www.w3schools.com/whatis/default.asp"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div>
+
+                <div class="work">
+                    <img src="data:image/png;base64,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" alt="sql">
+
+                    <div class="layer">
+                        <h3>Python</h3>
+                        <p>
+                            It helps me build my backend logic for the website and makes me understand how to manage the backend of the website.
+                        </p>
+
+                        <a href="https://www.w3schools.com/python/default.asp"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="https://github.com/shankkarpal46" class="btn">See more</a>
+        </div>
+    </div>
+
+<!-------------------------------------------------------Contact--------------------------------------------------------------------------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-envelope"></i></i> shankkarpal46@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 8452869126</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/shankapal20/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/fantastico_18/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shankkar-pal-3a0713297/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+                <a href="./img/ATS_Shankar3.pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                <form name = "submit-to-google-sheet" action="">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required> 
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © Shankkar Pal. Made by <i class="fa-solid fa-computer"></i> Shankar Pradeep Pal.</p>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right= "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right= "-200px";
+        }
+    </script>
+
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx1mV8WKwCzF-FCRn1ZdF0PIVoo_dg-eRAFtxpNwQQMb3NxXhUxWe6wUmwQPJKaQJVm/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!....."
+            setTimeout(function(){
+                msg.innerHTML = " " 
+            },5000)
+
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script>
+    var typed = new Typed('#element', {
+      strings: ['<i>Computer Science Graduate</i>', '<i>Pro-active Programmer</i>','<i>Full Stack Web Developer</i>'],
+      typeSpeed: 50,
+    });
+
+  </script>
+</body>
+</html>
